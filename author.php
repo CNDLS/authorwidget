@@ -12,7 +12,7 @@ Author URI: https://cndls.georgetown.edu/
 class AuthorWidget extends WP_Widget {
     /** constructor */
     function AuthorWidget() {
-        require_once(ABSPATH.'wp-content/mu-plugins/author-plugin.php');
+        require_once(ABSPATH.'author-plugin.php');
 		$widget_ops = array('classname' => 'widget_listauthors', 'description' => __( 'Displays a list of authors') );
 		parent::WP_Widget(false, $name = 'Authors', $widget_ops);	
     }
